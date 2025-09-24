@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float speed = 20f;
 
-    void Update()
+    private void Update()
     {
         // Move the vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * 20f);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
+
+    public float GetSpeed() => speed;
 }
