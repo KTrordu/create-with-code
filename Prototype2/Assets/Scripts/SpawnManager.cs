@@ -3,17 +3,14 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] animalPrefabs;
-    [SerializeField] private float spawnRangeX = 20f;
+    [SerializeField] private float spawnRangeX = 10f;
     [SerializeField] private float spawnPosZ = 20f;
+    [SerializeField] private float startDelay = 2.0f;
+    [SerializeField] private float spawnInterval = 1.5f;
 
     private void Start()
     {
-        InputManager.Instance.OnSpawnPerformed += InputManager_OnSpawnPerformed;
-    }
-
-    private void InputManager_OnSpawnPerformed(object sender, System.EventArgs e)
-    {
-        HandleSpawn();
+        InvokeRepeating("HandleSpawn", startDelay, spawnInterval);
     }
 
     private void HandleSpawn()

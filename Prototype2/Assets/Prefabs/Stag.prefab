@@ -276,6 +276,8 @@ GameObject:
   - component: {fileID: 1341032721613636108}
   - component: {fileID: 8913697076196691890}
   - component: {fileID: -4674951108681434336}
+  - component: {fileID: 5402322206143214821}
+  - component: {fileID: 2565914422063752966}
   m_Layer: 0
   m_Name: Stag
   m_TagString: Untagged
@@ -357,6 +359,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 30
   lowBounds: -10
+--- !u!65 &5402322206143214821
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482539019378161463}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.22315973, y: 0.5325943, z: 0.4694116}
+  m_Center: {x: 0.00007848306, y: 0.23370379, z: 0.047148574}
+--- !u!114 &2565914422063752966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482539019378161463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0227a9c7fb6684c814eae079840ef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3546489677367212173
 GameObject:
   m_ObjectHideFlags: 0
